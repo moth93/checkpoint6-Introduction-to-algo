@@ -1,0 +1,23 @@
+ALGORITHM sentance
+VAR
+    phrase: STRING;
+    str:CHAR;
+    nbre_of_caracters, nbre_of_words, nbre_of_vowls:INTEGER;
+BEGIN
+   nbre_of_caracters:=0;
+   nbre_of_words:=0;
+   nbre_of_vowls:=0;
+   REPEAT
+      write ("enter the sentence character by caracter");
+      read (str);
+      nbre_of_caracters:=nbre_of_caracters+1;
+      IF (str==' ') THEN
+       nbre_of_words:=nbre_of_words+1; 
+      END_IF
+      IF (str='a' OR str=='e' OR str=='u' OR str== 'i' OR str=='o') THEN
+        nbre_of_vowls= nbre_of_vowls+1;
+      END_IF
+      phrase+str;
+   UNTIL (str==".")
+
+END
